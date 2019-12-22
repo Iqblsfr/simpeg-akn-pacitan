@@ -1,0 +1,499 @@
+2019-12-11 08:20:39 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#3 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\Controller.php(164): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\xampp\htdocs\pens\absensi-pegawai\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php:635
+Stack trace:
+#0 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#1 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\db\Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\Controller.php(164): yii\base\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\xampp\htdocs\pens\absensi-pegawai\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\xampp\htdocs\pens\absensi-pegawai\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2019-12-11 08:20:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.3\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ASUS\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-PCUKCB4'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ASUS'
+    'LOCALAPPDATA' => 'C:\\Users\\ASUS\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-PCUKCB4'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ASUS\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-PCUKCB4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-PCUKCB4'
+    'USERNAME' => 'ASUS'
+    'USERPROFILE' => 'C:\\Users\\ASUS'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1576048837.1933
+    'REQUEST_TIME' => 1576048837
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-12-11 11:15:12 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'notNull' (T_STRING), expecting ']'' in C:\xampp\htdocs\pens\absensi-pegawai\console\migrations\m191211_101001_create_tb_karyawan_table.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-12-11 11:14:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.3\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ASUS\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-PCUKCB4'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ASUS'
+    'LOCALAPPDATA' => 'C:\\Users\\ASUS\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-PCUKCB4'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ASUS\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-PCUKCB4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-PCUKCB4'
+    'USERNAME' => 'ASUS'
+    'USERPROFILE' => 'C:\\Users\\ASUS'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1576059261.5788
+    'REQUEST_TIME' => 1576059261
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-12-11 11:17:24 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'notNull' (T_STRING), expecting ']'' in C:\xampp\htdocs\pens\absensi-pegawai\console\migrations\m191211_101001_create_tb_karyawan_table.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-12-11 11:17:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.3\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ASUS\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-PCUKCB4'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ASUS'
+    'LOCALAPPDATA' => 'C:\\Users\\ASUS\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-PCUKCB4'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ASUS\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-PCUKCB4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-PCUKCB4'
+    'USERNAME' => 'ASUS'
+    'USERPROFILE' => 'C:\\Users\\ASUS'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1576059440.6891
+    'REQUEST_TIME' => 1576059440
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-12-11 11:20:29 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'notNull' (T_STRING), expecting ']'' in C:\xampp\htdocs\pens\absensi-pegawai\console\migrations\m191211_102012_create_tb_karyawan_table.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-12-11 11:20:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.3\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ASUS\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-PCUKCB4'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ASUS'
+    'LOCALAPPDATA' => 'C:\\Users\\ASUS\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-PCUKCB4'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ASUS\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-PCUKCB4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-PCUKCB4'
+    'USERNAME' => 'ASUS'
+    'USERPROFILE' => 'C:\\Users\\ASUS'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1576059625.948
+    'REQUEST_TIME' => 1576059625
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-12-11 12:34:08 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'notNull' (T_STRING), expecting ']'' in C:\xampp\htdocs\pens\absensi-pegawai\console\migrations\m191211_113249_create_tb_absensi_table.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-12-11 12:34:05 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.3\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ASUS\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-PCUKCB4'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ASUS'
+    'LOCALAPPDATA' => 'C:\\Users\\ASUS\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-PCUKCB4'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ASUS\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-PCUKCB4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-PCUKCB4'
+    'USERNAME' => 'ASUS'
+    'USERPROFILE' => 'C:\\Users\\ASUS'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1576064045.2035
+    'REQUEST_TIME' => 1576064045
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\pens\\absensi-pegawai\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-12-18 11:19:16 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'' in C:\xampp\htdocs\pens\simpeg\console\migrations\m191218_100654_init_users.php:23
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-12-18 11:19:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.3\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ASUS\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-PCUKCB4'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ASUS'
+    'LOCALAPPDATA' => 'C:\\Users\\ASUS\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-PCUKCB4'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ASUS\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ASUS\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-PCUKCB4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-PCUKCB4'
+    'USERNAME' => 'ASUS'
+    'USERPROFILE' => 'C:\\Users\\ASUS'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\pens\\simpeg\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\pens\\simpeg\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\pens\\simpeg\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\pens\\simpeg\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\pens\\simpeg\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1576664351.3228
+    'REQUEST_TIME' => 1576664351
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\pens\\simpeg\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
